@@ -2,4 +2,5 @@ package data
 
 class RentalAgency {
 
+
 }

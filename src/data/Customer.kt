@@ -1,4 +1,4 @@
 package data
 
-class Customer {
+class Customer  {
 }
