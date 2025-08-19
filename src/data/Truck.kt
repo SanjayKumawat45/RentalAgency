@@ -1,12 +1,11 @@
 package data
 
-class Bike(
+class Truck(
     override val id: String,
-    override val brand: String,
-    override val model: String,
+    override val brand: String, override val model: String,
     override val rentalPricePerDay: Double,
-    override var isAvailable: Boolean,
-    var engineCapacity : Double,
+    override var isAvailable: Boolean = true,
+    val loadCapacity : Double,
 ): Vehicle {
     override fun rent() {
         isAvailable = false
@@ -14,8 +13,7 @@ class Bike(
     }
 
     override fun returnVechile() {
-        isAvailable =  true
+        isAvailable = true
         println("$brand $model returned successfully!")
     }
-
 }

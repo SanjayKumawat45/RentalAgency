@@ -7,14 +7,14 @@ class Car(
     override val rentalPricePerDay: Double,
     override var isAvailable: Boolean = true,
     val seats: Int,
-): Vechile {
+): Vehicle {
     override fun rent() {
         isAvailable = false
         println("$brand $model rented successfully!")
     }
 
-    override fun retrunVechile() {
+    override fun returnVechile() {
         isAvailable = true
-        println("$brand $model retrun successfully!")
+        println("$brand $model returned successfully!")
     }
 }

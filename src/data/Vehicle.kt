@@ -1,12 +1,12 @@
 package data
 
-interface Vechile {
+interface Vehicle {
     val id: String
     val brand: String
     val model: String
     val rentalPricePerDay: Double
-    val isAvailable: Boolean
+    var isAvailable: Boolean
 
     fun rent()
-    fun retrunVechile()
+    fun returnVechile()
 }
